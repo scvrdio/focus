@@ -3,7 +3,7 @@ import { Magnifier, NutHex } from '@gravity-ui/icons';
 
 export default function Header() {
   return (
-    <div className="pt-14">
+    <div className="pt-[env(safe-area-inset-top)]">
       <div className="flex items-center rounded-xl px-6 py-2">
         {/* Лупа слева */}
         <Magnifier className="text-gray-400 mr-3" />

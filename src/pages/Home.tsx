@@ -2,7 +2,7 @@ import ListCard from '../components/ListCard';
 
 export default function Home() {
   return (
-    <div className="h-full grid grid-cols-2 gap-4 px-3 py-4">
+    <div className="grid grid-cols-2 gap-4 px-3 py-4">
       <ListCard
         title="Просмотрено"
         color="green"

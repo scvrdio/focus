@@ -31,12 +31,13 @@ export default function ListCard({
           )}
         >
           <div className="z-10">
-            <div className="text-[.75em] font-black pt-4">{title}</div>
+            <div className="text-[4vw] font-black pt-4">{title}</div>
           </div>
 
-          <div className="absolute bottom-[-96px] left-1/2 -translate-x-1/2 w-[150%] z-0 pointer-events-none">
-            {image}
-          </div>
+          <div className="absolute bottom-[-30%] left-1/2 -translate-x-1/2 w-[150%] z-0 pointer-events-none">
+  {image}
+</div>
+
         </button>
       );
       
