@@ -1,5 +1,6 @@
 import { LuPlus } from 'react-icons/lu';
 import Button from './Button';
+import WebApp from '@twa-dev/sdk';
 
 export default function Footer() {
     return (
@@ -8,6 +9,9 @@ export default function Footer() {
                 icon={<LuPlus size={18} />}
                 title="Добавить фильм/сериал"
                 color="outline"
+                onClick={() => {
+                    WebApp.HapticFeedback.impactOccurred('medium');
+                }}
             />
         </div>
     );

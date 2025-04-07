@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import clsx from 'clsx';
+import WebApp from '@twa-dev/sdk';
 
 interface IconButtonProps {
   icon: ReactNode;
@@ -10,7 +11,10 @@ interface IconButtonProps {
 export default function IconButton({ icon, onClick, className = '' }: IconButtonProps) {
   return (
     <button
-      onClick={onClick}
+    onClick={() => {
+        WebApp.HapticFeedback.impactOccurred('light');
+        onClick?.();
+      }}
       className={clsx(
         'w-9 h-9 flex items-center justify-center rounded-xl text-white hover:text-zinc-300 transition-colors',
         className
