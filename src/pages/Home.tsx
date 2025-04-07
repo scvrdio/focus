@@ -1,10 +1,18 @@
+import ListCard from '../components/ListCard';
+
 export default function Home() {
   return (
-    <div>
-      <div className="p-4 pt-2">
-        <h1 className="text-2xl font-bold">Главная страница</h1>
-        <p className="text-gray-400">Здесь будут списки, карточки и всё остальное</p>
-      </div>
+    <div className="h-full grid grid-cols-2 gap-4 px-3 py-4">
+      <ListCard
+        title="Просмотрено"
+        color="green"
+        image={<img src="/cards/archive.png" alt="Archive" className="w-full h-auto" />}
+      />
+      <ListCard
+        title="Буду смотреть"
+        color="yellow"
+        image={<img src="/cards/to-watch.png" alt="To Watch" className="w-full h-auto" />}
+      />
     </div>
   );
 }

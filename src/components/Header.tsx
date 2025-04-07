@@ -1,11 +1,12 @@
-import { LuSearch, LuSettings } from 'react-icons/lu';
+import IconButton from './IconButton';
+import { Magnifier, NutHex } from '@gravity-ui/icons';
 
 export default function Header() {
   return (
-    <div className="pt-10">
+    <div className="pt-14">
       <div className="flex items-center rounded-xl px-6 py-2">
         {/* Лупа слева */}
-        <LuSearch size={18} className="text-gray-400 mr-3" />
+        <Magnifier className="text-gray-400 mr-3" />
 
         {/* Поле ввода */}
         <input
@@ -15,9 +16,7 @@ export default function Header() {
         />
 
         {/* Шестерёнка справа */}
-        <button className=" text-gray-400 hover:text-white bg-black">
-          <LuSettings size={18} />
-        </button>
+        <IconButton icon={<NutHex />} />
       </div>
     </div>
   );
