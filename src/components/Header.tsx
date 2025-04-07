@@ -2,7 +2,7 @@ import { LuSearch, LuSettings } from 'react-icons/lu';
 
 export default function Header() {
   return (
-    <div className="">
+    <div className="pt-10">
       <div className="flex items-center rounded-xl px-6 py-2">
         {/* Лупа слева */}
         <LuSearch size={18} className="text-gray-400 mr-3" />
