@@ -1,3 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'CoFoWeather';
+  src: url('/src/assets/fonts/CoFoWeather-WideLight-Trial.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CoFoWeather';
+  src: url('/src/assets/fonts/CoFoWeather-WideRegular-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CoFoWeather';
+  src: url('/src/assets/fonts/CoFoWeather-WideMedium-Trial.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CoFoWeather';
+  src: url('/src/assets/fonts/CoFoWeather-WideBold-Trial.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CoFoWeather';
+  src: url('/src/assets/fonts/CoFoWeather-WideBlack-Trial.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+html, body, #root {
+  height: 100%;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -23,6 +67,7 @@ a:hover {
 }
 
 body {
+  @apply font-sans;
   margin: 0;
   display: flex;
   place-items: center;

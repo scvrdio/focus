@@ -1,25 +1,17 @@
-import './App.css'
-
 import { useEffect } from 'react';
 import WebApp from '@twa-dev/sdk';
+import Home from './pages/Home';
 
-function App() {
+export default function App() {
   useEffect(() => {
-    WebApp.ready(); // Сообщаем Telegram, что всё загружено
+    WebApp.ready();
   }, []);
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-      <h1>🎬 Telegram Mini App</h1>
-      <p>Добро пожаловать! Всё готово к запуску 🚀</p>
-      <button
-        onClick={() => WebApp.close()}
-        style={{ padding: '10px 20px', fontSize: '16px' }}
-      >
-        Закрыть приложение
-      </button>
+    <div className="min-h-screen bg-black flex justify-center">
+      <div className="w-[400px] bg-black text-white min-h-screen">
+        <Home />
+      </div>
     </div>
   );
 }
-
-export default App;
