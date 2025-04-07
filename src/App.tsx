@@ -10,18 +10,19 @@ export default function App() {
     WebApp.expand();
     WebApp.requestFullscreen();
     WebApp.setHeaderColor('#000000'); // или любой цвет в hex
+    WebApp.lockOrientation;
   }, []);
 
   return (
     <div className="min-h-screen bg-black flex justify-center">
       <div className="w-full max-w-[400px] bg-black text-white min-h-screen">
-      <div className="flex flex-col min-h-screen">
-  <Header />
-  <main className="flex-1">
-    <Home />
-  </main>
-  <Footer />
-</div>
+        <div className="flex flex-col min-h-screen pt-[env(safe-area-inset-top)]">
+          <Header />
+            <main className="flex-1">
+             <Home />
+            </main>
+          <Footer />
+        </div>
       </div>
     </div>
   );
