@@ -8,9 +8,9 @@ export default function App() {
   useEffect(() => {
     WebApp.ready();
     WebApp.expand();
-    // WebApp.requestFullscreen();
-    // WebApp.setHeaderColor('#000000'); // или любой цвет в hex
-    // WebApp.lockOrientation;
+    WebApp.requestFullscreen();
+    WebApp.setHeaderColor('#000000'); // или любой цвет в hex
+    WebApp.lockOrientation;
   }, []);
 
   return (
