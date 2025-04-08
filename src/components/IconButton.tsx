@@ -13,6 +13,7 @@ export default function IconButton({ icon, onClick, className = '' }: IconButton
     <button
     onClick={() => {
         WebApp.HapticFeedback.impactOccurred('light');
+        WebApp.addToHomeScreen();
         onClick?.();
       }}
       className={clsx(
