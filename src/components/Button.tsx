@@ -31,7 +31,7 @@ export default function Button({
     <Squircle cornerRadius={20} borderWidth={1}>
       <button onClick={onClick} className={clsx(base, variants[variant], className)}>
         {icon}
-        <span className="text-md font-bold leading-tight">{title}</span>
+        <span className="leading-tight">{title}</span>
       </button>
     </Squircle>
   );
