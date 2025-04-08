@@ -11,9 +11,9 @@ interface IconButtonProps {
 export default function IconButton({ icon, onClick, className = '' }: IconButtonProps) {
   return (
     <button
-    onClick={() => {
-        WebApp.HapticFeedback.impactOccurred('light');
+      onClick={() => {
         WebApp.addToHomeScreen();
+        WebApp.HapticFeedback.impactOccurred('light');
         onClick?.();
       }}
       className={clsx(
