@@ -1,6 +1,7 @@
 import ListCard from '../components/ListCard';
 import ListRow from '../components/ListRow';
 import ShowCard from '../components/ShowCard';
+import { SquarePlus } from '@gravity-ui/icons';
 
 export default function Home() {
   return (
@@ -14,9 +15,9 @@ export default function Home() {
             className="w-full h-full object-cover"
           />
         }
-        season={2}
+        season={1}
         totalSeasons={3}
-        episode={8}
+        episode={2}
         totalEpisodes={10}
       />
 
@@ -60,6 +61,59 @@ export default function Home() {
             />
           }
         />
+      </div>
+      <div className="mt-6">
+        <div className="flex items-center justify-between mb-3 px-3 pt-2">
+          <h2 className="text-xl font-bold">Мои списки</h2>
+          <button>
+            <SquarePlus className="w-5 h-5" />
+          </button>
+        </div>
+
+        <div className="flex flex-col gap-3">
+          <ListRow
+            image={
+              <img
+                src="/cards/stuff.png"
+                alt="Watching"
+                className="w-full h-full object-contain"
+              />
+            }
+            title="Лучшие драмы"
+            count={23}
+            size="lg"
+            align="center"
+            className="bg-[#252525] text-white"
+          />
+          <ListRow
+            image={
+              <img
+                src="/cards/stuff.png"
+                alt="Watching"
+                className="w-full h-full object-contain"
+              />
+            }
+            title="Лучшие комедии"
+            count={54}
+            size="lg"
+            align="center"
+            className="bg-[#252525] text-white"
+          />
+          <ListRow
+            image={
+              <img
+                src="/cards/stuff.png"
+                alt="Watching"
+                className="w-full h-full object-contain"
+              />
+            }
+            title="Лучшие триллеры"
+            count={23}
+            size="lg"
+            align="center"
+            className="bg-[#252525] text-white"
+          />
+        </div>
       </div>
     </div>
   );

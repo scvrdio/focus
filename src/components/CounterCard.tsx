@@ -9,20 +9,20 @@ interface CounterCardProps {
 
 export default function CounterCard({ value, max, label, onClick }: CounterCardProps) {
   return (
-    <button onClick={onClick} className="w-full h-full">
+    <button onClick={onClick} className="w-full h-full p-0 m-0">
       <Squircle cornerRadius={12} borderWidth={1} className="w-full h-full">
-        <div className="aspect-[2/3] w-full h-full bg-white rounded-[12px] flex flex-col justify-between items-center p-0.5">
-          <div className="flex flex-col items-center">
-            <div className="text-[14px] text-blue-600 font-medium mt-1">{label}</div>
-            <div className="text-[48px] leading-none font-bold text-blue-600">
-              {value}
-              <span className="text-[16px] align-top">/{max}</span>
-            </div>
+        <div className="aspect-[2/3] w-full h-full bg-white rounded-[12px] flex flex-col justify-between items-center p-[2px]">
+          <div className="text-[4vw] text-blue-600 font-medium pt-2.5">{label}</div>
+          <div className="relative text-[16vw] leading-none font-condensed text-blue-600">
+            {value}
+            <span className="absolute top-[15%] right-[-60%] text-[4vw] font-medium text-blue-500">
+              /{max}
+            </span>
           </div>
           <Squircle cornerRadius={10} borderWidth={1} className="w-full">
-          <div className="w-full rounded-[10px] bg-blue-500 text-white text-[24px] leading-none font-bold h-9 flex items-center justify-center">
-            +
-          </div>
+            <div className="w-full rounded-[10px] bg-blue-500 text-white text-[20px] leading-none font-bold h-8 flex items-center justify-center">
+              +
+            </div>
           </Squircle>
         </div>
       </Squircle>

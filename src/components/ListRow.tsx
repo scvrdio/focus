@@ -25,19 +25,19 @@ export default function ListRow({
             <button
                 className={clsx(
                     'w-full rounded-[20px] flex items-center justify-between transition-all',
-                    size === 'lg' ? 'h-24 px-4 py-4' : 'h-16 px-2 py-2',
+                    size === 'lg' ? 'h-24 px-2 py-2 ' : 'h-16 px-2 py-2',
                     className
                 )}
             >
                 <div className="flex-1 flex items-center gap-3">
                     {/* квадратная картинка слева */}
-                    <Squircle cornerRadius={12} borderWidth={1}>
-                        <div className="w-12 h-12 overflow-hidden rounded-xl flex items-center justify-center">
+                    <Squircle cornerRadius={12} borderWidth={1} className={clsx(size === 'lg' ? 'w-[80px] h-[80px]' : 'w-12 h-12')}>
+                        <div className=" overflow-hidden rounded-xl flex items-center justify-center">
                             {image}
                         </div>
                     </Squircle>
 
-                    <div className={clsx('flex-1 text-white', align === 'center' && 'text-center')}>
+                    <div className={clsx('flex-1 text-white', size === 'lg' ? 'text-left' : align === 'center' && 'text-center')}>
                         {title}
                     </div>
                 </div>

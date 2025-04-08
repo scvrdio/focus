@@ -37,6 +37,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CoFoWeather Condensed';
+  src: url('/src/assets/fonts/CoFoWeather-CondensedRegular-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body,
 #root {
@@ -78,6 +85,12 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE и Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari и Chrome */
 }
 
 h1 {

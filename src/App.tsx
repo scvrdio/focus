@@ -7,11 +7,11 @@ import Footer from './components/Footer';
 export default function App() {
   useEffect(() => {
     WebApp.ready();
-    WebApp.expand();
-    WebApp.requestFullscreen();
-    WebApp.disableVerticalSwipes();
-    WebApp.setHeaderColor('#000000'); // или любой цвет в hex
-    WebApp.lockOrientation;
+    // WebApp.expand();
+    // WebApp.requestFullscreen();
+    // WebApp.disableVerticalSwipes();
+    // WebApp.setHeaderColor('#000000'); // или любой цвет в hex
+    // WebApp.lockOrientation;
   }, []);
 
   return (
@@ -19,7 +19,7 @@ export default function App() {
       <div className="w-full bg-black text-white flex flex-col h-screen">
         <Header />
 
-        <main className="flex-1 overflow-y-auto">
+        <main className="flex-1 overflow-y-auto no-scrollbar">
           <Home />
         </main>
 
