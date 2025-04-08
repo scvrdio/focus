@@ -31,12 +31,12 @@ export default function ListCard({
           colors[color],
           className
         )}
-      >
+      > 
         <div className="z-10">
           <div className="text-[4vw] font-black pt-4">{title}</div>
         </div>
 
-        <div className="absolute bottom-[-30%] left-1/2 -translate-x-1/2 w-[150%] z-0 pointer-events-none">
+        <div className="absolute bottom-[-30%] left-1/2 -translate-x-1/2 w-[140%] z-0 pointer-events-none">
           {image}
         </div>
 

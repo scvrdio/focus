@@ -25,7 +25,7 @@ export default function ListRow({
             <button
                 className={clsx(
                     'w-full rounded-[20px] flex items-center justify-between transition-all',
-                    size === 'lg' ? 'h-24 px-4 py-4' : 'h-16 px-2 pl-2 pr-0',
+                    size === 'lg' ? 'h-24 px-4 py-4' : 'h-16 px-2 py-2',
                     className
                 )}
             >
@@ -42,7 +42,7 @@ export default function ListRow({
                     </div>
                 </div>
 
-                <div className="flex items-center gap-.5 text-white w-12 h-12">
+                <div className="flex items-center justify-center gap-1 text-white w-12 h-12">
                     <span className="">{count}</span>
                     <ChevronRight />
                 </div>
