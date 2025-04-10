@@ -4,7 +4,7 @@ import { Magnifier, NutHex } from '@gravity-ui/icons';
 export default function Header() {
   return (
     <div className="pt-safe-top">
-      <div className="flex items-center rounded-xl pt-4">
+      <div className="flex items-center rounded-xl pt-8 px-6">
         {/* Лупа слева */}
         <Magnifier className="text-gray-400 mr-3" />
 
