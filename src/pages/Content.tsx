@@ -1,7 +1,25 @@
 import ProvidersRow from '../components/ProvidersRow';
 import DescriptionBlock from '../components/DescriptionBlock';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import WebApp from '@twa-dev/sdk'; // ← это Telegram SDK
+
 
 export default function Content() {
+    const navigate = useNavigate();
+    useEffect(() => {
+        // Показать кнопку Telegram с текстом "Назад"
+        WebApp.BackButton.show();
+        WebApp.BackButton.onClick(() => {
+          navigate('/');
+        });
+      
+        // Очистка обработчика при размонтировании
+        return () => {
+          WebApp.BackButton.offClick(() => navigate('/'));
+          WebApp.BackButton.hide();
+        };
+      }, [navigate]);
     return (
         <div className="w-full h-full text-white">
             {/* Постер + мета-инфа */}
