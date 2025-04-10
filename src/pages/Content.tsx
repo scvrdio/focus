@@ -12,15 +12,15 @@ export default function Content() {
         // Показать кнопку Telegram с текстом "Назад"
         WebApp.BackButton.show();
         WebApp.BackButton.onClick(() => {
-          navigate('/');
+            navigate('/');
         });
-      
+
         // Очистка обработчика при размонтировании
         return () => {
-          WebApp.BackButton.offClick(() => navigate('/'));
-          WebApp.BackButton.hide();
+            WebApp.BackButton.offClick(() => navigate('/'));
+            WebApp.BackButton.hide();
         };
-      }, [navigate]);
+    }, [navigate]);
     return (
         <div className="w-full h-full text-white">
             {/* Постер + мета-инфа */}
@@ -36,7 +36,9 @@ export default function Content() {
                 </div>
 
                 {/* Контент сверху */}
-                <div className="relative z-10 h-full flex flex-col items-center justify-evenly p-2 pt-safe-top">
+                <div className="relative z-10 h-full flex flex-col items-center justify-evenly p-2 style={{
+      paddingTop: 'calc(var(--tg-safe-area-inset-top, 0px) + var(--tg-content-safe-area-inset-top, 0px))',
+    }}">
                     <div className="text-2xl font-bold">Тед Лассо</div>
                     <div className="px-[25%]">
                         <img
