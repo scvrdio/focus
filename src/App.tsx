@@ -7,11 +7,11 @@ import Content from './pages/Content';
 export default function App() {
   useEffect(() => {
     WebApp.ready();
-    WebApp.expand();
-    WebApp.requestFullscreen();
-    WebApp.disableVerticalSwipes();
-    WebApp.setHeaderColor('#000000'); // или любой цвет в hex
-    WebApp.lockOrientation;
+    // WebApp.expand();
+    // WebApp.requestFullscreen();
+    // WebApp.disableVerticalSwipes();
+    // WebApp.setHeaderColor('#000000'); // или любой цвет в hex
+    // WebApp.lockOrientation;
   }, []);
 
   return (

@@ -5,6 +5,8 @@ import { CirclePlus } from '@gravity-ui/icons';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Player } from "@lottiefiles/react-lottie-player"
+import { Squircle } from 'corner-smoothing'
 
 export default function Home() {
   const navigate = useNavigate();
@@ -81,11 +83,16 @@ export default function Home() {
           <div className="flex flex-col gap-3">
             <ListRow
               image={
-                <img
-                  src="/cards/stuff.png"
-                  alt="Watching"
-                  className="w-full h-full object-contain"
-                />
+                <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#1E1E1E]">
+                   <div className="flex items-center justify-center w-full h-full">
+                  <Player
+                    autoplay
+                    loop
+                    src="/lottie/Comedy.json"
+                    style={{ width: '75%'}}
+                  />
+                  </div>
+                </Squircle>
               }
               title="Лучшие драмы"
               count={23}
@@ -95,11 +102,16 @@ export default function Home() {
             />
             <ListRow
               image={
-                <img
-                  src="/cards/stuff.png"
-                  alt="Watching"
-                  className="w-full h-full object-contain"
-                />
+                <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#1E1E1E]">
+                   <div className="flex items-center justify-center w-full h-full">
+                  <Player
+                    autoplay
+                    loop
+                    src="/lottie/Drama.json"
+                    style={{ width: '75%'}}
+                  />
+                  </div>
+                </Squircle>
               }
               title="Лучшие комедии"
               count={54}
@@ -109,11 +121,16 @@ export default function Home() {
             />
             <ListRow
               image={
-                <img
-                  src="/cards/stuff.png"
-                  alt="Watching"
-                  className="w-full h-full object-contain"
-                />
+                <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#1E1E1E]">
+                   <div className="flex items-center justify-center w-full h-full">
+                  <Player
+                    autoplay
+                    loop
+                    src="/lottie/Thriller.json"
+                    style={{ width: '75%'}}
+                  />
+                  </div>
+                </Squircle>
               }
               title="Лучшие триллеры"
               count={23}
