@@ -15,7 +15,7 @@ export default {
         normal: ['CoFoWeather Normal', 'sans-serif'],
       },
       padding: {
-        'safe-top': 'calc(var(--tg-safe-area-inset-top)+var(--tg-content-safe-area-inset-top))',
+        'safe-top': 'calc(var(--tg-safe-area-inset-top, 0px) + var(--tg-content-safe-area-inset-top, 0px))',
         'safe-bottom': 'calc(var(--tg-safe-area-inset-bottom)+var(--tg-content-safe-area-inset-bottom)))',
         'safe-left': 'calc(var(--tg-safe-area-inset-left)+var(--tg-content-safe-area-inset-left)))',
         'safe-right': 'calc(var(--tg-safe-area-inset-right)+var(--tg-content-safe-area-inset-right))',
