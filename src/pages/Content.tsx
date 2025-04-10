@@ -36,8 +36,8 @@ export default function Content() {
                 </div>
 
                 {/* Контент сверху */}
-                <div className="relative z-10 h-full flex flex-col items-center justify-evenly p-safe-top"> 
-                    <div className="text-2xl font-bold">Тед Лассо</div>
+                <div className="relative z-10 h-full flex flex-col items-center justify-evenly pt-safe-top"> 
+                    <div className="text-2xl font-bold pt-4">Тед Лассо</div>
                     <div className="px-[25%]">
                         <img
                             src="/cards/ted-lasso.png"
