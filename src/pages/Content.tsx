@@ -36,9 +36,9 @@ export default function Content() {
                 </div>
 
                 {/* Контент сверху */}
-                <div className="relative z-10 h-full flex flex-col items-center justify-evenly p-2 style={{
-      paddingTop: 'calc(var(--tg-safe-area-inset-top, 0px) + var(--tg-content-safe-area-inset-top, 0px))',
-    }}">
+                <div className="relative z-10 h-full flex flex-col items-center justify-evenly p-2" style={{
+                    paddingTop: 'calc(var(--tg-safe-area-inset-top, 0px) + var(--tg-content-safe-area-inset-top, 0px))',
+                }}>
                     <div className="text-2xl font-bold">Тед Лассо</div>
                     <div className="px-[25%]">
                         <img
