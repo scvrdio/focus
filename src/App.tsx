@@ -21,18 +21,4 @@ export default function App() {
     </Routes>
   );
 
-  // return (
-  //   <div className="h-screen bg-black flex justify-center">
-  //     <div className="w-full bg-black text-white flex flex-col h-screen">
-  //       {/* <Header /> */}
-
-  //       <main className="flex-1 overflow-y-auto no-scrollbar">
-  //         <Content />
-  //       </main>
-
-  //       <Footer />
-  //     </div>
-  //   </div>
-  // );
-
 }
