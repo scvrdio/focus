@@ -3,6 +3,7 @@ import DescriptionBlock from '../components/DescriptionBlock';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import WebApp from '@twa-dev/sdk'; // ← это Telegram SDK
+import Footer from '../components/Footer';
 
 
 export default function Content() {
@@ -56,6 +57,7 @@ export default function Content() {
             <DescriptionBlock
                 text={`Тренер по американскому футболу Тед Лассо получает должность главного тренера в английской футбольной команде. Ничего не понимая в этом виде спорта, Тед приступает к своим новым обязанностям со всем присущим ему энтузиазмом.`}
             />
+            <Footer variant='home' />
         </div>
     );
 }
