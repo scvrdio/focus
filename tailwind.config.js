@@ -16,9 +16,9 @@ export default {
       },
       padding: {
         'safe-top': 'calc(var(--tg-content-safe-area-inset-top, 0px))',
-        'safe-bottom': 'var(--tg-content-safe-area-inset-bottom, 0px))',
-        'safe-left': 'var(--tg-content-safe-area-inset-left, 0px))',
-        'safe-right': 'var(--tg-content-safe-area-inset-right, 0px))',
+        'safe-bottom': 'calc(var(--tg-content-safe-area-inset-bottom, 0px))',
+        'safe-left': 'calc(var(--tg-content-safe-area-inset-left, 0px))',
+        'safe-right': 'calc(var(--tg-content-safe-area-inset-right, 0px))',
       },
     },
   },
