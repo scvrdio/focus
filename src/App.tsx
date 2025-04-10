@@ -6,12 +6,16 @@ import Content from './pages/Content';
 
 export default function App() {
   useEffect(() => {
+    const platform = WebApp.platform;
+
+    if (platform === 'android' || platform === 'ios') {
+      WebApp.expand();
+      WebApp.requestFullscreen();
+    }
     WebApp.ready();
-    // WebApp.expand();
-    // WebApp.requestFullscreen();
-    // WebApp.disableVerticalSwipes();
-    // WebApp.setHeaderColor('#000000'); // или любой цвет в hex
-    // WebApp.lockOrientation;
+    WebApp.disableVerticalSwipes();
+    WebApp.setHeaderColor('#000000'); // или любой цвет в hex
+    WebApp.lockOrientation;
   }, []);
 
   return (
