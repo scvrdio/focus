@@ -22,8 +22,9 @@ export default function Content() {
         };
     }, [navigate]);
     return (
-        <div className="w-full h-full text-white">
+        <div className="flex flex-col h-screen w-full text-white pb-0">
             {/* Постер + мета-инфа */}
+            <main className="flex-1 overflow-y-auto">
             <div className="relative aspect-[2/3] w-full overflow-hidden rounded-b-[32px]">
                 {/* Блюр фона */}
                 <div className="absolute inset-0 z-0">
@@ -57,6 +58,7 @@ export default function Content() {
             <DescriptionBlock
                 text={`Тренер по американскому футболу Тед Лассо получает должность главного тренера в английской футбольной команде. Ничего не понимая в этом виде спорта, Тед приступает к своим новым обязанностям со всем присущим ему энтузиазмом.`}
             />
+            </main>
             <Footer variant='content' />
         </div>
     );
