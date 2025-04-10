@@ -1,7 +1,7 @@
 import ListCard from '../components/ListCard';
 import ListRow from '../components/ListRow';
 import ShowCard from '../components/ShowCard';
-import { SquarePlus } from '@gravity-ui/icons';
+import { CirclePlus } from '@gravity-ui/icons';
 
 export default function Home() {
   return (
@@ -66,7 +66,7 @@ export default function Home() {
         <div className="flex items-center justify-between mb-3 px-3 pt-2">
           <h2 className="text-xl font-bold">Мои списки</h2>
           <button>
-            <SquarePlus className="w-5 h-5" />
+            <CirclePlus className="w-5 h-5" />
           </button>
         </div>
 

@@ -11,7 +11,14 @@ export default {
       },
       fontFamily: {
         sans: ['CoFoWeather', 'sans-serif'],
-        condensed: ['CoFoWeather Condensed', 'sans-serif'], // ← вот оно
+        condensed: ['CoFoWeather Condensed', 'sans-serif'],
+        normal: ['CoFoWeather Normal', 'sans-serif'],
+      },
+      padding: {
+        'safe-top': 'env(--tg-safe-area-inset-top)',
+        'safe-bottom': 'env(--tg-safe-area-inset-bottom)',
+        'safe-left': 'env(--tg-safe-area-inset-left)',
+        'safe-right': 'env(--tg-safe-area-inset-right)',
       },
     },
   },

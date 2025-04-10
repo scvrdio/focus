@@ -44,6 +44,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CoFoWeather Normal';
+  src: url('/src/assets/fonts/CoFoWeather-NormalMedium-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body,
 #root {

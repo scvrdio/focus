@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import WebApp from '@twa-dev/sdk';
 import Home from './pages/Home';
+import Content from './pages/Content';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -17,10 +18,10 @@ export default function App() {
   return (
     <div className="h-screen bg-black flex justify-center">
       <div className="w-full bg-black text-white flex flex-col h-screen">
-        <Header />
+        {/* <Header /> */}
 
         <main className="flex-1 overflow-y-auto no-scrollbar">
-          <Home />
+          <Content />
         </main>
 
         <Footer />
