@@ -24,7 +24,7 @@ export default function Footer({ variant = 'home' }: FooterProps) {
                     title="Добавить в список"
                     color="outline"
                     onClick={() => {
-                        WebApp.HapticFeedback.notificationOccurred('success');
+                        WebApp.HapticFeedback.impactOccurred('medium');
                     }}
                 />
             )}

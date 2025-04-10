@@ -12,7 +12,7 @@ export default function Home() {
     <div className="w-full px-4 py-4 flex flex-col h-screen gap-[2px]">
       <Header />
       {/* ShowCard сверху */}
-      <main className="flex-1 overflow-y-auto no-scrollbar">
+      <main className="flex-1 overflow-y-auto no-scrollbar mb-0.5">
         <ShowCard
           image={
             <img
