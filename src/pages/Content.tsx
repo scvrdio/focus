@@ -1,4 +1,5 @@
 import ProvidersRow from '../components/ProvidersRow';
+import DescriptionBlock from '../components/DescriptionBlock';
 
 export default function Content() {
     return (
@@ -32,7 +33,11 @@ export default function Content() {
                     </div>
                     <ProvidersRow />
                 </div>
+
             </div>
+            <DescriptionBlock
+                text={`Тренер по американскому футболу Тед Лассо получает должность главного тренера в английской футбольной команде. Ничего не понимая в этом виде спорта, Тед приступает к своим новым обязанностям со всем присущим ему энтузиазмом.`}
+            />
         </div>
     );
 }
