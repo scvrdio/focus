@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import WebApp from '@twa-dev/sdk';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import Content from './pages/Content';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Footer from './components/Footer';
 
 export default function App() {
