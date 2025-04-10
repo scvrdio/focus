@@ -88,7 +88,7 @@ export default function Home() {
                   <Player
                     autoplay
                     loop
-                    src="/lottie/Comedy.json"
+                    src="/lottie/Drama.json"
                     style={{ width: '75%'}}
                   />
                   </div>
@@ -107,7 +107,7 @@ export default function Home() {
                   <Player
                     autoplay
                     loop
-                    src="/lottie/Drama.json"
+                    src="/lottie/Comedy.json"
                     style={{ width: '75%'}}
                   />
                   </div>
