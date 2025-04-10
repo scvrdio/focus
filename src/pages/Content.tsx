@@ -22,7 +22,7 @@ export default function Content() {
         };
     }, [navigate]);
     return (
-        <div className="flex flex-col h-screen w-full text-white pb-0">
+        <div className="flex flex-col h-screen w-full text-white">
             {/* Постер + мета-инфа */}
             <main className="flex-1 overflow-y-auto">
             <div className="relative aspect-[2/3] w-full overflow-hidden rounded-b-[32px]">
