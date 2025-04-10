@@ -1,7 +1,7 @@
 import CounterCard from './CounterCard';
 import { ReactNode } from 'react';
 import { Squircle } from 'corner-smoothing'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 interface ShowCardProps {
   image: ReactNode;
