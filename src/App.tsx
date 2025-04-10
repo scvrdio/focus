@@ -14,7 +14,6 @@ export default function App() {
     }
     WebApp.ready();
     WebApp.disableVerticalSwipes();
-    WebApp.setHeaderColor('#000000'); // или любой цвет в hex
     WebApp.lockOrientation;
   }, []);
 

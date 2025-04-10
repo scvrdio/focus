@@ -11,7 +11,7 @@ import { Squircle } from 'corner-smoothing'
 export default function Home() {
   const navigate = useNavigate();
   return (
-    <div className="w-full px-4 py-4 flex flex-col h-screen gap-[2px]">
+    <div className="w-full flex flex-col h-screen">
       <Header />
       {/* ShowCard сверху */}
       <main className="flex-1 overflow-y-auto no-scrollbar mb-0.5">

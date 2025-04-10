@@ -8,7 +8,7 @@ interface FooterProps {
 
 export default function Footer({ variant = 'home' }: FooterProps) {
     return (
-        <div className="px-6 pt-3 pb-8">
+        <div className="px-6 pt-3 pb-8 bg-black/30">
             {variant === 'home' ? (
                 <Button
                     icon={<LuPlus size={18} />}
