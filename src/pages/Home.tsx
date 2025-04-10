@@ -80,7 +80,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 pb-32">
             <ListRow
               image={
                 <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#1E1E1E]">
