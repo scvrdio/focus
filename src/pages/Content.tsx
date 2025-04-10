@@ -8,7 +8,7 @@ export default function Content() {
                 {/* Блюр фона */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/public/cards/ted-lasso.png"
+                        src="/cards/ted-lasso.png"
                         alt="Фон"
                         className="w-full h-full object-cover blur-xl scale-110"
                     />
@@ -20,7 +20,7 @@ export default function Content() {
                     <div className="text-2xl font-bold">Тед Лассо</div>
                     <div className="px-[25%]">
                         <img
-                            src="/public/cards/ted-lasso.png"
+                            src="/cards/ted-lasso.png"
                             alt="Постер"
                             className="w-full h-auto rounded-2xl mb-4"
                         />
