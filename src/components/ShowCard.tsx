@@ -1,6 +1,7 @@
 import CounterCard from './CounterCard';
 import { ReactNode } from 'react';
 import { Squircle } from 'corner-smoothing'
+import WebApp from '@twa-dev/sdk';
 // import { Link } from 'react-router-dom';
 
 interface ShowCardProps {
@@ -25,11 +26,15 @@ export default function ShowCard({
   onPosterClick,
 }: ShowCardProps) {
   return (
-    <Squircle cornerRadius={20} borderWidth={1}>
+    <Squircle cornerRadius={20} borderWidth={1} >
       <div className="flex w-full gap-3 p-2 bg-[#2f8cff] rounded-[20px]">
         {/* Постер: 1/3 */}
         <div className="flex-1">
-          <button onClick={onPosterClick} className="w-full h-full">
+          <button onClick={() => {
+            WebApp.HapticFeedback.impactOccurred('medium');
+            onPosterClick?.();
+          }}
+            className="w-full h-full">
             <Squircle cornerRadius={12} borderWidth={1} className="w-full h-full">
               <div className="h-full overflow-hidden rounded-xl flex items-center justify-center">
                 {image}
