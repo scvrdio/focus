@@ -29,7 +29,7 @@ export default function ListRow({
                     className
                 )}
             >
-                <div className="flex-1 flex items-center gap-3">
+                <div className="flex-1 flex items-center gap-4">
                     {/* квадратная картинка слева */}
                     <Squircle cornerRadius={12} borderWidth={1} className={clsx(size === 'lg' ? 'w-[80px] h-[80px]' : 'w-12 h-12')}>
                         <div className=" overflow-hidden rounded-xl flex items-center justify-center">
@@ -42,7 +42,7 @@ export default function ListRow({
                     </div>
                 </div>
 
-                <div className="flex items-center justify-center gap-1 text-white w-12 h-12">
+                <div className="flex items-center justify-center gap-1 text-white w-12 h-12 font-normal">
                     <span className="">{count}</span>
                     <ChevronRight />
                 </div>

@@ -18,8 +18,8 @@ export default function ListCard({
   className = '',
 }: ListCardProps) {
   const colors = {
-    green: 'bg-black/80 text-green-300 ring-1 ring-green-400',
-    yellow: 'bg-black/80 text-indigo-300 ring-1 ring-indigo-400',
+    green: 'bg-[#2acb47] text-green-900',
+    yellow: 'bg-[#FFC300] text-yellow-800',
   };
 
   return (
@@ -27,18 +27,19 @@ export default function ListCard({
       <button
         onClick={onClick}
         className={clsx(
-          'flex flex-col justify-start relative rounded-[20px] aspect-[4/5] w-full overflow-hidden transition-all hover:ring-2 hover:scale-[1.02]',
+          'flex flex-col justify-start relative rounded-[20px] aspect-[4/5] w-full overflow-hidden transition-all',
           colors[color],
           className
         )}
-      >
+      > 
         <div className="z-10">
-          <div className="text-[4vw] font-bold pt-4">{title}</div>
+          <div className="text-[4vw] font-black pt-4">{title}</div>
         </div>
 
-        <div className="absolute bottom-[-35%] left-1/2 -translate-x-1/2 w-[155%] z-0 pointer-events-none">
+        <div className="absolute bottom-[-30%] left-1/2 -translate-x-1/2 w-[140%] z-0 pointer-events-none">
           {image}
         </div>
+
       </button>
     </Squircle>
   );

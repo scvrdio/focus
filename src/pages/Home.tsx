@@ -1,7 +1,7 @@
 import ListCard from '../components/ListCard';
 import ListRow from '../components/ListRow';
 import ShowCard from '../components/ShowCard';
-import { CirclePlus } from '@gravity-ui/icons';
+import { CirclePlusFill } from '@gravity-ui/icons';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -73,17 +73,17 @@ export default function Home() {
           />
         </div>
         <div className="mt-6">
-          <div className="flex items-center justify-between mb-3 px-3 pt-2">
+          <div className="flex items-center justify-between mb-2 px-5 py-2">
             <h2 className="text-xl font-bold">Мои списки</h2>
             <button>
-              <CirclePlus className="w-5 h-5" />
+              <CirclePlusFill className="w-5 h-5" />
             </button>
           </div>
 
           <div className="flex flex-col gap-3 pb-32">
             <ListRow
               image={
-                <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#1E1E1E]">
+                <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#0f0f0f]">
                    <div className="flex items-center justify-center w-full h-full">
                   <Player
                     autoplay
@@ -98,11 +98,11 @@ export default function Home() {
               count={23}
               size="lg"
               align="center"
-              className="bg-[#252525] text-white"
+              className="bg-[#090909] text-white"
             />
             <ListRow
               image={
-                <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#1E1E1E]">
+                <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#0f0f0f]">
                    <div className="flex items-center justify-center w-full h-full">
                   <Player
                     autoplay
@@ -117,11 +117,11 @@ export default function Home() {
               count={54}
               size="lg"
               align="center"
-              className="bg-[#252525] text-white"
+              className="bg-[#090909] text-white"
             />
             <ListRow
               image={
-                <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#1E1E1E]">
+                <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#0f0f0f]">
                    <div className="flex items-center justify-center w-full h-full">
                   <Player
                     autoplay
@@ -136,7 +136,7 @@ export default function Home() {
               count={23}
               size="lg"
               align="center"
-              className="bg-[#252525] text-white"
+              className="bg-[#090909] text-white"
             />
 
           </div>
