@@ -10,11 +10,11 @@ interface CounterCardProps {
 export default function CounterCard({ value, max, label, onClick }: CounterCardProps) {
   return (
     <button onClick={onClick} className="w-full h-full">
-      <Squircle cornerRadius={12} borderWidth={1} className="w-full h-full bg-[#7A85A8]">
-        <div className='p-[1px]'>
-          <Squircle cornerRadius={11} borderWidth={1} className="w-full h-full">
-            <div className="aspect-[2/3] w-full h-full rounded-[12px] flex flex-col justify-between items-center p-[6px] bg-[#98A3C6]">
-              <div className="text-[4vw] text-[#191C22] font-normal pt-2.5">{label}</div>
+      <Squircle cornerRadius={12} borderWidth={1} className="w-full">
+        <div className='p-[1px] bg-[#7A85A8]'>
+          <Squircle cornerRadius={11} borderWidth={1}>
+            <div className="aspect-[2/3] w-full h-full flex flex-col justify-between items-center p-[6px] bg-[#98A3C6]">
+              <div className="text-[4vw] text-[#191C22] font-normal pt-1">{label}</div>
               <div className="relative text-[24vw] leading-none font-condensed text-[#191C22]">
                 {value}
                 <span className="absolute top-[15%] right-[-40%] text-[4vw] font-medium text-[#191C22]">
