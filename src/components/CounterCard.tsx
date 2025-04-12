@@ -9,19 +9,23 @@ interface CounterCardProps {
 
 export default function CounterCard({ value, max, label, onClick }: CounterCardProps) {
   return (
-    <button onClick={onClick} className="w-full h-full p-0 m-0">
-      <Squircle cornerRadius={12} borderWidth={1} className="w-full h-full">
-        <div className="aspect-[2/3] w-full h-full rounded-[12px] flex flex-col justify-between items-center p-[2px] bg-black">
-          <div className="text-[4vw] text-[#FF9D00] font-normal pt-2.5">{label}</div>
-          <div className="relative text-[24vw] leading-none font-condensed text-[#FF9D00]">
-            {value}
-            <span className="absolute top-[15%] right-[-40%] text-[4vw] font-medium text-[#FF9D00]">
-              /{max}
-            </span>
-          </div>
-          <Squircle cornerRadius={10} borderWidth={1} className="w-full">
-            <div className="w-full rounded-[10px] bg-[#FF9D00] text-black text-[24px] leading-none font-medium h-8 flex items-center justify-center">
-              +
+    <button onClick={onClick} className="w-full h-full">
+      <Squircle cornerRadius={12} borderWidth={1} className="w-full h-full bg-[#7A85A8]">
+        <div className='p-[1px]'>
+          <Squircle cornerRadius={11} borderWidth={1} className="w-full h-full">
+            <div className="aspect-[2/3] w-full h-full rounded-[12px] flex flex-col justify-between items-center p-[6px] bg-[#98A3C6]">
+              <div className="text-[4vw] text-[#191C22] font-normal pt-2.5">{label}</div>
+              <div className="relative text-[24vw] leading-none font-condensed text-[#191C22]">
+                {value}
+                <span className="absolute top-[15%] right-[-40%] text-[4vw] font-medium text-[#191C22]">
+                  /{max}
+                </span>
+              </div>
+              <Squircle cornerRadius={7} borderWidth={1} className="w-full">
+                <div className="w-full bg-[#7A85A8] text-[#98A3C6] text-[24px] leading-none font-medium h-8 flex items-center justify-center">
+                  +
+                </div>
+              </Squircle>
             </div>
           </Squircle>
         </div>

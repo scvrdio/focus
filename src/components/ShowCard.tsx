@@ -27,9 +27,9 @@ export default function ShowCard({
   onPosterClick,
 }: ShowCardProps) {
   return (
-    <Squircle cornerRadius={16} borderWidth={1} >
-      <div className="flex flex-col w-full gap-[1px] p-[1px] bg-[#FF9D00]">
-        <div className="flex flex-row w-full gap-1 p-0.5">
+    <Squircle cornerRadius={18} borderWidth={1} >
+      <div className="flex flex-col w-full gap-1 bg-[#a2add0]">
+        <div className="flex flex-row w-full gap-2 p-2">
           {/* Постер: 1/3 */}
           <div className="flex-1">
             <button onClick={() => {
@@ -66,6 +66,7 @@ export default function ShowCard({
           </div>
 
         </div>
+        <div className="p-[1px]">
         <ListCardRow
           title="Смотрю сейчас"
           count="3"
@@ -78,6 +79,7 @@ export default function ShowCard({
             />
           }
         />
+        </div>
       </div>
 
 
