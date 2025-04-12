@@ -90,6 +90,11 @@ a:hover {
   color: #535bf2;
 }
 
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px #FFC300; /* заменяй на нужный цвет */
+}
+
 body {
   @apply font-sans;
   margin: 0;
