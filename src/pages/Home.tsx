@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       {/* ShowCard сверху */}
       <main className="flex-1 overflow-y-auto no-scrollbar">
-        <div className="flex flex-col gap-4 pt-40 pb-4">
+        <div className="flex flex-col gap-2 pt-40 pb-4">
           <ShowCard
             image={
               <img
@@ -34,7 +34,7 @@ export default function Home() {
           
           <ListCardRow
             title="Смотрю сейчас"
-            count="23"
+            count="3"
             color="yellow"
             image={
               <img

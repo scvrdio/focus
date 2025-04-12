@@ -26,9 +26,9 @@ export default function ListCardRow({
   };
 
   return (
-    <Squircle cornerRadius={20} borderWidth={1}>
+    <Squircle cornerRadius={16} borderWidth={1}>
       <div className={clsx('p-[1px]', colors[color])}>
-        <Squircle cornerRadius={19} borderWidth={1}>
+        <Squircle cornerRadius={15} borderWidth={1}>
           <button
             onClick={onClick}
             className={clsx(
@@ -48,7 +48,7 @@ export default function ListCardRow({
               </div>
             </div>
 
-            <div className="flex items-center justify-center gap-1 w-12 h-12 font-normal pr-2">
+            <div className="flex items-center justify-end gap-0.5 w-12 h-12 font-normal pr-3">
               <span className="">{count}</span>
               <ChevronRight />
             </div>
