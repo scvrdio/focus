@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import clsx from 'clsx';
 import { Squircle } from 'corner-smoothing'
+import { ChevronRight } from '@gravity-ui/icons';
 
 interface ListCardProps {
   title: string;
@@ -27,6 +28,10 @@ export default function ListCard({
   return (
     <Squircle cornerRadius={20} borderWidth={1}>
       <div className={clsx('p-[1px]', colors[color])}>
+      <ChevronRight
+  className="absolute bottom-3 right-3 w-5 h-5 text-current opacity-80 z-10"
+/>
+
         <Squircle cornerRadius={19} borderWidth={1}>
           <button
             onClick={onClick}
