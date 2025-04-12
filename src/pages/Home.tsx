@@ -37,6 +37,7 @@ export default function Home() {
         <div className="grid grid-cols-2 gap-4">
           <ListCard
             title="Просмотрено"
+            count='120'
             color="green"
             image={
               <img
@@ -48,6 +49,7 @@ export default function Home() {
           />
           <ListCard
             title="Буду смотреть"
+            count='56'
             color="yellow"
             image={
               <img

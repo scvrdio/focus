@@ -45,6 +45,13 @@
 }
 
 @font-face {
+  font-family: 'CoFoWeather Condensed';
+  src: url('/src/assets/fonts/CoFoWeather-CondensedBlack-Trial.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'CoFoWeather Normal';
   src: url('/src/assets/fonts/CoFoWeather-NormalMedium-Trial.otf') format('opentype');
   font-weight: 400;

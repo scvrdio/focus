@@ -15,7 +15,7 @@ export default function CounterCard({ value, max, label, onClick }: CounterCardP
           <Squircle cornerRadius={11} borderWidth={1}>
             <div className="aspect-[2/3] w-full h-full flex flex-col justify-between items-center p-[6px] bg-[#98A3C6]">
               <div className="text-[4vw] text-[#191C22] font-normal pt-1">{label}</div>
-              <div className="relative text-[24vw] leading-none font-condensed text-[#191C22]">
+              <div className="relative text-[24vw] leading-none font-condensed font-light text-[#191C22]">
                 {value}
                 <span className="absolute top-[15%] right-[-40%] text-[4vw] font-medium text-[#191C22]">
                   /{max}

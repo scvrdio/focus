@@ -4,6 +4,7 @@ import { Squircle } from 'corner-smoothing'
 
 interface ListCardProps {
   title: string;
+  count: string;
   image: ReactNode;
   color?: 'green' | 'yellow';
   onClick?: () => void;
@@ -13,12 +14,13 @@ interface ListCardProps {
 export default function ListCard({
   title,
   image,
+  count,
   color = 'green',
   onClick,
   className = '',
 }: ListCardProps) {
   const colors = {
-    green: 'text-[#A2ADD0] bg-[#a2add0]',
+    green: 'text-[#E9BD5F] bg-[#E9BD5F]',
     yellow: 'text-[#AAD0A2] bg-[#aad0a2]',
   };
 
@@ -34,8 +36,11 @@ export default function ListCard({
               className
             )}
           >
-            <div className="z-10">
+            <div className="">
               <div className="text-[4vw] font-black pt-4">{title}</div>
+              <div className="text-[20vw] font-condensed -mt-4">
+                {count}
+              </div>
             </div>
 
             <div className="absolute bottom-[-180%] left-1/2 -translate-x-1/2 w-[390%] z-0 pointer-events-none">
