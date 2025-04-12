@@ -32,14 +32,14 @@ export default function ListCardRow({
           <button
             onClick={onClick}
             className={clsx(
-              'w-full flex items-center justify-between transition-all h-16 px-2 py-2 bg-black overflow-hidden',
+              'w-full flex items-center justify-between transition-all h-20 px-2 py-2 bg-black overflow-hidden',
               colors[color],
               className
             )}
           >
-            <div className="flex-1 flex items-center overflow-visible pl-2">
+            <div className="flex-1 flex items-center overflow-visible pl-4">
               {/* квадратная картинка слева */}
-                <div className="scale-[12] w-12 h-12">
+                <div className="scale-[16] w-12 h-12">
                   {image}
                 </div>
 

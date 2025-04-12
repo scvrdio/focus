@@ -32,18 +32,6 @@ export default function Home() {
             onPosterClick={() => navigate('/content')}
           />
           
-          <ListCardRow
-            title="Смотрю сейчас"
-            count="3"
-            color="yellow"
-            image={
-              <img
-                src="/cards/now.png"
-                alt="Watching now"
-                className="w-full h-auto"
-              />
-            }
-          />
         </div>
 
         {/* Сетка из 2 карточек */}
