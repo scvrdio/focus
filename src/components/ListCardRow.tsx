@@ -39,7 +39,7 @@ export default function ListCardRow({
           >
             <div className="flex-1 flex items-center overflow-visible pl-4">
               {/* квадратная картинка слева */}
-                <div className="scale-[16] w-12 h-12">
+                <div className="scale-[16d] w-12 h-12">
                   {image}
                 </div>
 

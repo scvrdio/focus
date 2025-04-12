@@ -1,5 +1,4 @@
 import ListCard from '../components/ListCard';
-import ListCardRow from '../components/ListCardRow';
 import ListRow from '../components/ListRow';
 import ShowCard from '../components/ShowCard';
 import { CirclePlusFill } from '@gravity-ui/icons';
