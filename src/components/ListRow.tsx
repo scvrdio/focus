@@ -42,7 +42,7 @@ export default function ListRow({
                     </div>
                 </div>
 
-                <div className="flex items-center justify-center gap-1 text-white w-12 h-12 font-normal">
+                <div className="flex items-center justify-center gap-1 text-white w-12 h-12 font-normal pr-2">
                     <span className="">{count}</span>
                     <ChevronRight />
                 </div>

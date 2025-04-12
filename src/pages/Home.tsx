@@ -1,4 +1,5 @@
 import ListCard from '../components/ListCard';
+import ListCardRow from '../components/ListCardRow';
 import ListRow from '../components/ListRow';
 import ShowCard from '../components/ShowCard';
 import { CirclePlusFill } from '@gravity-ui/icons';
@@ -14,8 +15,8 @@ export default function Home() {
     <div className="w-full flex flex-col h-screen">
       <Header />
       {/* ShowCard сверху */}
-      <main className="flex-1 overflow-y-auto no-scrollbar mb-0.5">
-        <div className="flex flex-col gap-0.5 pt-40">
+      <main className="flex-1 overflow-y-auto no-scrollbar">
+        <div className="flex flex-col gap-4 pt-40 pb-4">
           <ShowCard
             image={
               <img
@@ -30,20 +31,18 @@ export default function Home() {
             totalEpisodes={10}
             onPosterClick={() => navigate('/content')}
           />
-
-          <ListRow
+          
+          <ListCardRow
+            title="Смотрю сейчас"
+            count="23"
+            color="yellow"
             image={
               <img
                 src="/cards/now.png"
-                alt="Watching"
+                alt="Watching now"
                 className="w-full h-auto"
               />
             }
-            title="Смотрю сейчас"
-            count={2}
-            size="sm"
-            align="center"
-            className="bg-[#2f8cff] text-white mb-4"
           />
         </div>
 
@@ -84,13 +83,13 @@ export default function Home() {
             <ListRow
               image={
                 <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#0f0f0f]">
-                   <div className="flex items-center justify-center w-full h-full">
-                  <Player
-                    autoplay
-                    loop
-                    src="/lottie/Drama.json"
-                    style={{ width: '75%'}}
-                  />
+                  <div className="flex items-center justify-center w-full h-full">
+                    <Player
+                      autoplay
+                      loop
+                      src="/lottie/Drama.json"
+                      style={{ width: '60%' }}
+                    />
                   </div>
                 </Squircle>
               }
@@ -103,13 +102,13 @@ export default function Home() {
             <ListRow
               image={
                 <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#0f0f0f]">
-                   <div className="flex items-center justify-center w-full h-full">
-                  <Player
-                    autoplay
-                    loop
-                    src="/lottie/Comedy.json"
-                    style={{ width: '75%'}}
-                  />
+                  <div className="flex items-center justify-center w-full h-full">
+                    <Player
+                      autoplay
+                      loop
+                      src="/lottie/Comedy.json"
+                      style={{ width: '60%' }}
+                    />
                   </div>
                 </Squircle>
               }
@@ -122,13 +121,13 @@ export default function Home() {
             <ListRow
               image={
                 <Squircle cornerRadius={12} borderWidth={1} className="w-[80px] h-[80px] bg-[#0f0f0f]">
-                   <div className="flex items-center justify-center w-full h-full">
-                  <Player
-                    autoplay
-                    loop
-                    src="/lottie/Thriller.json"
-                    style={{ width: '75%'}}
-                  />
+                  <div className="flex items-center justify-center w-full h-full">
+                    <Player
+                      autoplay
+                      loop
+                      src="/lottie/Thriller.json"
+                      style={{ width: '60%' }}
+                    />
                   </div>
                 </Squircle>
               }

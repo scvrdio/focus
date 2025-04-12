@@ -1,0 +1,64 @@
+import { ReactNode } from 'react';
+import clsx from 'clsx';
+import { ChevronRight } from '@gravity-ui/icons';
+import { Squircle } from 'corner-smoothing'
+
+interface ListCardRowProps {
+  title: string;
+  count: string;
+  image: ReactNode;
+  color?: 'green' | 'yellow';
+  onClick?: () => void;
+  className?: string;
+}
+
+export default function ListCardRow({
+  title,
+  count,
+  image,
+  color = 'green',
+  onClick,
+  className = '',
+}: ListCardRowProps) {
+  const colors = {
+    green: 'text-[#A2ADD0] bg-[#a2add0]',
+    yellow: 'text-[#FF9D00] bg-[#FF9D00]',
+  };
+
+  return (
+    <Squircle cornerRadius={20} borderWidth={1}>
+      <div className={clsx('p-[1px]', colors[color])}>
+        <Squircle cornerRadius={19} borderWidth={1}>
+          <button
+            onClick={onClick}
+            className={clsx(
+              'w-full flex items-center justify-between transition-all h-16 px-2 py-2 bg-black overflow-hidden',
+              colors[color],
+              className
+            )}
+          >
+            <div className="flex-1 flex items-center overflow-visible pl-2">
+              {/* квадратная картинка слева */}
+                <div className="scale-[12] w-12 h-12">
+                  {image}
+                </div>
+
+              <div className='flex-1 align-baseline text-center'>
+                {title}
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center gap-1 w-12 h-12 font-normal pr-2">
+              <span className="">{count}</span>
+              <ChevronRight />
+            </div>
+
+
+
+          </button>
+        </Squircle>
+      </div>
+    </Squircle>
+  );
+
+}
