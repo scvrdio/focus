@@ -21,18 +21,18 @@ export default function ListCard({
   className = '',
 }: ListCardProps) {
   const colors = {
-    green: 'text-[#E9BD5F] bg-[#E9BD5F]',
-    yellow: 'text-[#AAD0A2] bg-[#aad0a2]',
+    green: 'text-[#E9BD5F] bg-[#090909]',
+    yellow: 'text-[#AAD0A2] bg-[#090909]',
   };
 
   return (
     <Squircle cornerRadius={20} borderWidth={1}>
-      <div className={clsx('p-[1px]', colors[color])}>
+      <div className={clsx('p-[0px]', colors[color])}>
       <ChevronRight
   className="absolute bottom-3 right-3 w-5 h-5 text-current opacity-80 z-10"
 />
 
-        <Squircle cornerRadius={19} borderWidth={1}>
+        {/* <Squircle cornerRadius={19} borderWidth={1}> */}
           <button
             onClick={onClick}
             className={clsx(
@@ -48,12 +48,12 @@ export default function ListCard({
               </div>
             </div>
 
-            <div className="absolute bottom-[-180%] left-1/2 -translate-x-1/2 w-[390%] z-0 pointer-events-none">
+            <div className="absolute bottom-[-182%] left-1/2 -translate-x-1/2 w-[390%] z-0 pointer-events-none">
               {image}
             </div>
 
           </button>
-        </Squircle>
+        {/* </Squircle> */}
       </div>
     </Squircle>
   );

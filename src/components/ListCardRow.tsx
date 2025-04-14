@@ -29,7 +29,7 @@ export default function ListCardRow({
     <Squircle cornerRadius={16} borderWidth={1}>
       <div className={clsx('p-[1px]', colors[color])}>
         <Squircle cornerRadius={16} borderWidth={1}>
-        <div className="absolute w-[144px] h-[144px] bg-[#a2add0] opacity-75 blur-[96px] rounded-full top-1/2 left-1 -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+          <div className="absolute w-[144px] h-[144px] bg-[#a2add0] opacity-75 blur-[96px] rounded-full top-1/2 left-1 -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
           <button
             onClick={onClick}
             className={clsx(
@@ -40,9 +40,9 @@ export default function ListCardRow({
           >
             <div className="flex-1 flex items-center overflow-visible pl-4">
               {/* квадратная картинка слева */}
-                <div className="scale-[3.5] w-12 h-12">
-                  {image}
-                </div>
+              <div className="scale-[3.5] w-12 h-12">
+                {image}
+              </div>
 
               <div className='flex-1 align-baseline text-center'>
                 {title}

@@ -1,6 +1,6 @@
 import ListCard from '../components/ListCard';
+import Watching from '../components/Watching';
 import ListRow from '../components/ListRow';
-import ShowCard from '../components/ShowCard';
 import { CirclePlusFill } from '@gravity-ui/icons';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
@@ -15,20 +15,21 @@ export default function Home() {
       <Header />
       {/* ShowCard сверху */}
       <main className="flex-1 overflow-y-auto no-scrollbar">
+
+      
+
         <div className="flex flex-col gap-2 pt-40 pb-4">
-          <ShowCard
+          <Watching
+            title="Смотрю сейчас"
+            count='32'
+            color="green"
             image={
               <img
-                src="/cards/poster.png"
-                alt="Poster"
-                className="w-full h-full object-cover"
+                src="/cards/archive.png"
+                alt="Archive"
+                className="w-full h-auto"
               />
             }
-            season={1}
-            totalSeasons={3}
-            episode={2}
-            totalEpisodes={10}
-            onPosterClick={() => navigate('/content')}
           />
           
         </div>
