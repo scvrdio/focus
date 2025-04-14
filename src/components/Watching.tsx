@@ -15,7 +15,6 @@ interface ListCardProps {
 
 export default function ListCard({
   title,
-  image,
   count,
   color = 'green',
   onClick,

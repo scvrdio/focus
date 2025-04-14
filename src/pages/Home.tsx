@@ -2,14 +2,14 @@ import ListCard from '../components/ListCard';
 import Watching from '../components/Watching';
 import ListRow from '../components/ListRow';
 import { CirclePlusFill } from '@gravity-ui/icons';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Player } from "@lottiefiles/react-lottie-player"
 import { Squircle } from 'corner-smoothing'
 
 export default function Home() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <div className="w-full flex flex-col h-screen">
       <Header />
