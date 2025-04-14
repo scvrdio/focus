@@ -36,7 +36,7 @@ export default function ListCard({
           <button
             onClick={onClick}
             className={clsx(
-              'flex flex-col justify-start relative rounded-[18px] aspect-[4/5] w-full overflow-hidden transition-all bg-black',
+              'flex flex-col justify-start relative rounded-[18px] aspect-[4/5] w-full overflow-hidden transition-all bg-[#090909]',
               colors[color],
               className
             )}
