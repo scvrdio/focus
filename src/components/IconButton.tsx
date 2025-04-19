@@ -17,7 +17,7 @@ export default function IconButton({ icon, onClick, className = '' }: IconButton
         onClick?.();
       }}
       className={clsx(
-        'w-9 h-9 flex items-center justify-center rounded-xl text-gray-400 hover:text-white transition-colors',
+        'w-9 h-9 flex items-center justify-center rounded-xl text-[#ff0000] hover:text-white transition-colors',
         className
       )}
     >
