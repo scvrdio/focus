@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { Squircle } from 'corner-smoothing'
 import { ChevronRight } from '@gravity-ui/icons';
 import StackedPosters from "../components/StackedPosters";
+import { useNavigate } from "react-router-dom";
 
 interface ListCardProps {
   title: string;
@@ -17,19 +18,24 @@ export default function ListCard({
   title,
   count,
   color = 'green',
-  onClick,
   className = '',
 }: ListCardProps) {
   const colors = {
     green: 'text-[#A2ADD0] bg-[#090909]',
     yellow: 'text-[#A2ADD0] bg-[#090909]',
   };
+  const navigate = useNavigate();
+
+const handleClick = () => {
+  navigate("/content");
+};
+
 
   return (
     <Squircle cornerRadius={20} borderWidth={1}>
 
       <button
-        onClick={onClick}
+        onClick={handleClick}
         className={clsx(
           'flex flex-row justify-stretch relative rounded-[18px] h-[172px] w-full overflow-hidden transition-all bg-[#090909]',
           colors[color],
